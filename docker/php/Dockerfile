@@ -2,6 +2,8 @@ FROM php:8.0.30-fpm-bullseye
 
 COPY ./docker/php/php.ini /usr/local/etc/php/php.ini
 
+EXPOSE 5173
+
 # パッケージのインストール
 RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash - \
     && apt-get update \
