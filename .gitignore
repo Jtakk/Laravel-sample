@@ -1,2 +1,6 @@
-/phpmyadmin
+# phpmyadminフォルダ以下のファイルは無視するが、フォルダ構成は管理する。
+/phpmyadmin/**
+!/phpmyadmin/**/
+!/phpmyadmin/**/.gitkeep
+
 /.vscode
