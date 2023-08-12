@@ -25,4 +25,10 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
+    public function create()
+    {
+        $user = \Auth::user();
+        return view('create', compact('user'));
+    }
 }
